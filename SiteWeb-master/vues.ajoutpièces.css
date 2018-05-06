@@ -1,0 +1,24 @@
+@charset "ISO-8859-1";
+
+input
+{
+	border-radius: 10px;
+	font-size: 1.5em;
+}
+.taille_du_texte
+{
+	font-size: 2em;
+	/*padding: 3%;*/
+	
+}
+img
+{
+	padding: 3%;
+}
+#conteneur
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: start;
+}

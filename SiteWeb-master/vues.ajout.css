@@ -1,0 +1,23 @@
+@charset "ISO-8859-1";
+
+.element
+{
+	background-color: #3B4970;
+	font-family: sans-serif;
+	font-size: 3.2em;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+}
+#conteneur
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+a
+{
+	text-decoration: none;
+	color: white;
+}
