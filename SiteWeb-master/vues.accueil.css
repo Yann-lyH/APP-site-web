@@ -1,0 +1,62 @@
+@charset "ISO-8859-1";
+@font-face {
+    font-family: Nevis;
+    src: url('nevis.ttf');
+}
+h1
+{
+	font-size: 60px;
+}
+#conteneur1
+{
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+	
+}
+
+#conteneur0
+{
+	font-family: Nevis;
+	text-align: center;
+	margin-bottom: 110px;
+}
+#conteneur2, #conteneur3, #conteneur4, #conteneur5
+{
+	text-align: center;
+	background-color: #3B4970;
+	border: 1px black solid;
+	border-radius: 10px;
+	overflow: hidden;
+    width: 200px;
+	height: 220px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	
+	
+}
+
+
+header, footer
+{
+	background-color: #3B4970
+}
+
+#legendeDonnees, #legendeLogement, #legendeStat, #legendeCapteurs
+{
+   font-family: Nevis,Impact, "Arial Black", Arial, Verdana, sans-serif;
+   font-size: 20px;
+   color: white;
+	
+	
+}
+#boutonDonnees, #boutonLogement, #boutonStat, #boutonCapteurs
+{
+	border: 0px;
+	height: 100px;
+	
+}
+
