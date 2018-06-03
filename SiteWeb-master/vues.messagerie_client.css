@@ -3,6 +3,7 @@
 
 	width: 20vh;
 	height:24vh;
+	margin-right: 5vh;
 	
     
 	
@@ -20,7 +21,7 @@ table
 {
 	background: white;
     border-collapse: collapse;
-    width: 186vh;
+    width: 170vh;
 }
 td, th 
 {
@@ -28,9 +29,9 @@ td, th
     height: 8vh;
     text-align: center;
 }
-.content_mail p {
+/*.content_mail p {
     margin: auto;
-	width: 46vh;
+	width: 30vh;
 	height: 8vh;
 	
 }
@@ -39,22 +40,18 @@ td, th
     color: black;
     text-decoration: none;
 }
-.content_mail p:hover {
-	background-color: gray;
+.content_mail a:hover {
 	text-decoration: underline ;
 	color: red;
-}
-.fleche_1page{
-	width: 3vh;
-	height: 3vh;
-}
-.fleche_far_page{
+}*/
+
+.fleche_suite_reception{
 	width: 3vh;
 	height: 3vh;
 }
 
 caption {
-	width: 186vh;
+	width: 170vh;
 	border: 1px solid black;
 	background-color: gray;
 }
@@ -77,7 +74,7 @@ caption {
   border: 1px solid #600 ;
   margin-bottom: 2vh ;
 }
-.menu_messagerie li a:hover, #navigation li a:focus, #navigation li a:active {
+.menu_messagerie li a:hover, .menu_messagerie li a:focus, .menu_messagerie li a:active {
   background: #900 ;
   text-decoration: underline ;
 }
@@ -89,7 +86,7 @@ caption {
 	border: 1px solid black;
 	overflow:auto;
 	height: 85vh;
-	width: 190vh;
+	width: 173vh;
 }
 
 .menu_messagerie{
@@ -117,12 +114,33 @@ caption {
 	left: 2vh;
 	bottom: 66vh;
 }
-.contenu_messagerie p {
+/*.bloc_suite_mail p {
     margin: auto;
-	width: 46vh;
+	width: 170vh;
 	height: 8vh;
 	
 }
-.contenu_messagerie p:hover{
-	background-color: gray;
+
+.bloc_suite_mail p:hover{
+	background: gray;
+}*/
+.bouton_voir_mail {
+	color: #3B4970;
+	border-radius: 10px;
+	padding: 0.5vh;
+	background:#ccc;
+	width: 25vh;
+}
+.bouton_voir_mail:hover {
+	background: gray;
+}
+.bouton_next_mail {
+	color: #3B4970;
+	border-radius: 10px;
+	padding: 0.5vh;
+	background:#ccc;
+	width: 25vh;
+}
+.bouton_next_mail:hover {
+	background: gray;
 }

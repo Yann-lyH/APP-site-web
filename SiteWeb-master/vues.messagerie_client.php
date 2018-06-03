@@ -20,7 +20,7 @@
          </nav>
          </div>
     <div class="bloc_messagerie">
-    <table class="contenu_messagerie">
+    <table class="contenu_messagerie" id="contenu_messagerie">
    <caption>Boite de réception</caption>
 
    <thead> <!-- En-tête du tableau -->
@@ -34,39 +34,31 @@
 
    <tfoot> <!-- Pied de tableau -->
        <tr>
-           <th>
-               
-               <a title="Page précédente" href="https://openclassrooms.com"><p><img class="fleche_1page"src="images site APP/fleche_left_reception.png" alt="Photo de fleche page précédente" /></p></a>
-               
-          </th>
-           <th>
            
-               <a title="reculer de 5 pages"  href="https://openclassrooms.com"><p><img class="fleche_far_page" src="images site APP/fleche_far_begin_reception.png" alt="Photo de fleche début réception" /></p></a>
-               
-           </th>
-           <th>
+           <th class="bloc_suite_mail" colspan="4">
            
-               <a title="avancer de 5 pages" href="https://openclassrooms.com"><p><img class="fleche_far_page" src="images site APP/fleche_far_end_reception.png" alt="Photo de fleche fin réception" /></p></a>
+               <!--<a onclick="change_page_next();" title="Plus de mails" href=""><p><img class="fleche_suite_reception" src="images site APP/fleche_suite_mail.png" alt="Photo de fleche mails suivants" /></p></a>-->
+               <form method="post" action="controller.messagerie_client.php">
+                    <input class= "bouton_next_mail" type="submit" value="Voir plus de mails"/>
+                </form>
                
            
            </th>
            
-           <th>
-           
-               <a title="Page suivante" href="https://openclassrooms.com"><p><img class="fleche_1page" src="images site APP/fleche_right_reception.png" alt="Photo de fleche page suivante" /></p></a>
-               
-           
-           </th>
        </tr>
    </tfoot>
 
    <tbody> <!-- Corps du tableau -->
    
    <?php include ("controller.messagerie_client.php"); ?>
+
    
    
    </tbody>
+   </table>
+   
+   
    </div>
-     </div>
+   </div>
 </body>
 </html>
