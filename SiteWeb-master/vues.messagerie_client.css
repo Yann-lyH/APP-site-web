@@ -134,7 +134,7 @@ caption {
 .bouton_voir_mail:hover {
 	background: gray;
 }
-.bouton_next_mail {
+/*.bouton_next_mail {
 	color: #3B4970;
 	border-radius: 10px;
 	padding: 0.5vh;
@@ -143,4 +143,4 @@ caption {
 }
 .bouton_next_mail:hover {
 	background: gray;
-}
+}*/

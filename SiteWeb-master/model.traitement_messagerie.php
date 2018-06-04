@@ -1,10 +1,6 @@
-<script>
-window.history.go(-1);
-</script>
 <?php
-session_start();
+$test2 = 2;
+include ("vues.messagerie_client.php");
 $_SESSION['page'] = $_SESSION['page'] + 1;
-//include ('controller.messagerie_client.php');
-//include ('model.messagerie_client.php');
-new_mail_page();
+new_mail_page($test2);
 ?>

@@ -23,7 +23,7 @@
     <table class="contenu_messagerie" id="contenu_messagerie">
    <caption>Boite de réception</caption>
 
-   <thead> <!-- En-tête du tableau -->
+   <thead> 
        <tr>
            <th>Expéditeur</th>
            <th>Objet</th>
@@ -32,23 +32,23 @@
        </tr>
    </thead>
 
-   <tfoot> <!-- Pied de tableau -->
-       <tr>
+   <tfoot> 
+       <!--   <tr>
            
            <th class="bloc_suite_mail" colspan="4">
            
-               <!--<a onclick="change_page_next();" title="Plus de mails" href=""><p><img class="fleche_suite_reception" src="images site APP/fleche_suite_mail.png" alt="Photo de fleche mails suivants" /></p></a>-->
-               <form method="post" action="controller.messagerie_client.php">
+               <a onclick="change_page_next();" title="Plus de mails" href=""><p><img class="fleche_suite_reception" src="images site APP/fleche_suite_mail.png" alt="Photo de fleche mails suivants" /></p></a>
+               <form method="post" action="model.traitement_messagerie.php">
                     <input class= "bouton_next_mail" type="submit" value="Voir plus de mails"/>
                 </form>
                
            
            </th>
            
-       </tr>
+       </tr> -->
    </tfoot>
 
-   <tbody> <!-- Corps du tableau -->
+   <tbody>
    
    <?php include ("controller.messagerie_client.php"); ?>
 

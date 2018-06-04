@@ -1,11 +1,9 @@
 <?php
 session_start();
-$_SESSION['page'] = 1;
+//$_SESSION['page'] = 1;
 //$_SESSION['nbMails'] = 10;
-function requete_messagerie($numPage){
+function requete_messagerie(){
     $_SESSION["compteur"]= 0;
-    $limite_sup_mail = $numPage*10;
-    $limite_min_mail = $numPage*10 - 10;
     try {
         $bdd = new PDO('mysql:host=localhost;dbname=app;charset=utf8', 'root', '');
         
@@ -21,28 +19,16 @@ function requete_messagerie($numPage){
     $req_mails->execute(array( $_SESSION['nbMails']));*/
     
     while ($donnees = $req_mails->fetch()) {
-        if ($_SESSION["compteur"] >= $limite_min_mail){
-            
-            if ($_SESSION["compteur"] < $limite_sup_mail){
-                
-                $_SESSION['expéditeur'.$_SESSION["compteur"].''] = $donnees["Expediteur"];
-                $_SESSION['objet'.$_SESSION["compteur"].''] = $donnees["objet"];
-                $_SESSION['date'.$_SESSION["compteur"].''] = $donnees["date"];
-                $_SESSION["compteur"] = $_SESSION["compteur"] +1;
-            }
-        
-        
-            
-        } else {
-            $_SESSION["compteur"] = $_SESSION["compteur"] +1;
-        }
-            
+        $_SESSION['expéditeur'.$_SESSION["compteur"].''] = $donnees["Expediteur"];
+        $_SESSION['objet'.$_SESSION["compteur"].''] = $donnees["objet"];
+        $_SESSION['date'.$_SESSION["compteur"].''] = $donnees["date"];
+        $_SESSION["compteur"] = $_SESSION["compteur"] +1;
     }
-    
-    return $limite_min_mail;
+    $req_mails->closeCursor();
     
     
     
 }
+requete_messagerie();
 
 ?>
