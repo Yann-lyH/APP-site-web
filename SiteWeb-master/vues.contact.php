@@ -15,7 +15,13 @@
      		
      		<form method="post" action="modele.contact.php">
      		    <div class="inputs_mail">
-     		        <p><label for="objet">Objet: </label><input type="text" name="objet" id="objet"></p>
+     		        <?php 
+     		        if(isset($_POST["response_objet"])) {
+     		            echo "<p><label for="objet">Objet: </label><input type="text" name="objet" id="objet" value='<?php echo Re/ '.$_POST["response_objet"].'';?>'</p>";
+     		        } else {
+     		            echo '<p><label for="objet">Objet: </label><input type="text" name="objet" id="objet"></p>';
+     		        }
+     		        ?>
      				<textarea name="message" id="message" placeholder="Saisir votre message" rows="15" cols="50"></textarea>
      				<p class="bouton"> <input type="submit" value="Envoyer" class="bouton_envoyer"/> </p>
      			</div>
