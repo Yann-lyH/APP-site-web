@@ -17,7 +17,9 @@
      		    <div class="inputs_mail">
      		        <?php 
      		        if(isset($_POST["response_objet"])) {
-     		            echo "<p><label for="objet">Objet: </label><input type="text" name="objet" id="objet" value='<?php echo Re/ '.$_POST["response_objet"].'';?>'</p>";
+     		            ?>
+     		            <p><label for="objet">Objet: </label><input type="text" name="objet" id="objet" value="<?php echo 'Rep/ '.$_POST["response_objet"].'';?>"></p>
+                        <?php
      		        } else {
      		            echo '<p><label for="objet">Objet: </label><input type="text" name="objet" id="objet"></p>';
      		        }

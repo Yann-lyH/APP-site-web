@@ -43,9 +43,6 @@ body {
 	justify-content:space-between;
 	margin-bottom: 0.5vh;
 }
-.bas {
-	margin-left: 71vh;
-}
 .bouton_return {
 	margin-right: 10vh;
 	color: #3B4970;
@@ -54,6 +51,10 @@ body {
 	background:#ccc;
 	width: 25vh;
 }
+.bouton_return:hover {
+	background: gray;
+	border: 1px solid gray;
+}
 .bouton_response {
 	margin-right: 10vh;
 	color: #3B4970;
@@ -61,4 +62,8 @@ body {
 	padding: 0.5vh;
 	background:#ccc;
 	width: 25vh;
+}
+.bouton_response:hover {
+	background: gray;
+	border: 1px solid gray;
 }

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Messagerie</title>
-        <link rel="stylesheet" href="vues.messagerie_client.css" />
+        <link rel="stylesheet" href="vues.mails_envoyes.css" />
     </head>
 
  	<body>
@@ -25,7 +25,6 @@
 
    <thead> 
        <tr>
-           <th>Expéditeur</th>
            <th>Objet</th>
            <th>Date</th>
            <th>Contenu</th>
@@ -50,7 +49,7 @@
 
    <tbody>
    
-   <?php include ("controller.messagerie_client.php"); ?>
+   <?php include ("controller.mails_envoyes.php"); ?>
 
    
    
