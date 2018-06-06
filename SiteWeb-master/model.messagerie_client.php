@@ -14,9 +14,9 @@ function requete_messagerie(){
         die('Erreur : ' . $e->getMessage());
         
     }
-    $req_mails = $bdd->query('SELECT * FROM messagerie ORDER BY date DESC');
-    /*$req_mails = $bdd->prepare('SELECT * FROM (messagerie ORDER BY date DESC)');
-    $req_mails->execute(array( $_SESSION['nbMails']));*/
+    //$req_mails = $bdd->query('SELECT * FROM messagerie ORDER BY date DESC');
+    $req_mails = $bdd->prepare('SELECT * FROM messagerie WHERE Destinataire = ? ORDER BY date DESC');
+    $req_mails->execute(array( $_SESSION['identifiant']));
     
     while ($donnees = $req_mails->fetch()) {
         $_SESSION['expéditeur'.$_SESSION["compteur"].''] = $donnees["Expediteur"];

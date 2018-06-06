@@ -1,5 +1,5 @@
 @charset "ISO-8859-1";
-#conteneur {
+#boutons_end {
 	display: flex;
 	justify-content: space-around;
 	align-item: center;

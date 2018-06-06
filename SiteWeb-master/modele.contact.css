@@ -1,5 +1,5 @@
 @charset "ISO-8859-1";
-#conteneur {
+#boutons_end {
 	display: flex;
 	justify-content: space-around;
 	align-item: center;
@@ -28,11 +28,11 @@ h1{
 	heigth: 30vh;
 	width: 30vh;	
 }
-.element {
+.icone {
 	text-align: center;
 	margin-bottom: 11vh;
 }
-.element1 {
+.info {
 	text-align: center;
 	margin-bottom: 11vh;
 	color: red;

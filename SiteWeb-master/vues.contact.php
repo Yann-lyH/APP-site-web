@@ -8,13 +8,20 @@
 
  	<body>
  		<?php include("vues.header.php");?>
-     	<div class="conteneur">
+     	<div class="page_contact">
      		<div class="contact_boxes">
      			<p> Un problème ? Envoyez un message à nos administrateurs ! </p>
      		</div>
      		
      		<form method="post" action="modele.contact.php">
      		    <div class="inputs_mail">
+     		    <?php 
+                    if ($_SESSION["identifiant"]=="admin"){
+                ?>
+                <p><label for="identifiant">Adresse mail: </label><input type="text" name="identifiant" id="identifiant"></p>
+                <?php   
+                    }
+                ?>
      		        <?php 
      		        if(isset($_POST["response_objet"])) {
      		            ?>
@@ -29,14 +36,22 @@
      			</div>
      			
             </form>
-
-            <div>
+           <?php 
+              if ($_SESSION["identifiant"]=="admin"){
+           ?>
+           <div>
                 <p class="contact">Ou contactez-nous : <br/> <br/>
                     Téléphone : 01 49 54 52 00 <br/> <br/>
                     Adresse : 28 rue Notre-Dame des Champs <br/> <br/> 
                 75006 PARIS 
                 </p>
             </div>    
+           <?php   
+           }
+           ?>
+           
+           
+            
      	</div>
      	
 </body>

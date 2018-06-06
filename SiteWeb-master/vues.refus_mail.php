@@ -10,7 +10,7 @@
          <p class= "image"> <img class ="picture" src="images site APP/refus_icone.png" alt="icone de refus" /> </p>
          <h1>Mail non envoyé !</h1>
          <p class= "message_utilisateur"> veuillez entrer un objet/message à transmettre aux administrateurs.</p>
-         <div id="conteneur" >
+         <div id="boutons_end" >
 
            <form action="vues.accueil.php" method="GET">
 	            <input type="submit" value="Retour à la page d'accueil" class="btn btn-primary" />

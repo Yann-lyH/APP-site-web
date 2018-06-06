@@ -14,7 +14,17 @@
               <ul class="menu_messagerie">
                     <p class="menu_title"> Menu </p>
                     <li class="option_mails"><a href="vues.messagerie_client.php">Boite de réception</a></li>
+                    <?php 
+                        if($_SESSION["identifiant"]=="admin"){
+                     ?>
+                    <li class="option_mails"><a href="vues.contact.php">Envoyer un mail à un client</a></li>
+                    <?php 
+                        } else {
+                    ?>
                     <li class="option_mails"><a href="vues.contact.php">Envoyer un mail aux administrateurs</a></li>
+                    <?php 
+                        }
+                    ?>
                     <li class="option_mails"><a href="vues.mails_envoyes.php">Mails envoyés</a></li>
              </ul>
          </nav>

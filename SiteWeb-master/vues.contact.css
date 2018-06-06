@@ -6,7 +6,7 @@ textarea
 	padding: 4vh;
 }
 
-.conteneur
+.page_contact
 {
 	display: flex;
 	flex-direction: column;
@@ -52,6 +52,12 @@ textarea
 }
 
 #objet{
+	border: 1px solid black;
+	border-radius: 6px;
+	height: 3vh;
+	width: 30vh;
+}
+#identifiant{
 	border: 1px solid black;
 	border-radius: 6px;
 	height: 3vh;
